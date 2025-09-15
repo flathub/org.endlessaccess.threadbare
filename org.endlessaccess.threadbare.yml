@@ -34,6 +34,7 @@ modules:
         x-checker-data:
           type: json
           url: https://api.github.com/repos/endlessm/threadbare/releases/latest
+          is-main-source: true
           version-query: .tag_name
           url-query: |
             .assets[] | select(.name | endswith(".pck")) | .browser_download_url
