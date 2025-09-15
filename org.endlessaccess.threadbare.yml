@@ -16,15 +16,16 @@ modules:
   - name: threadbare
     buildsystem: simple
     sources:
-
-      - type: git
-        url: https://github.com/endlessm/threadbare.git
-        tag: v0.1.4
-        commit: 13b84ae8534f08e464c2963f08aec2ddfb3ca873
+      - type: archive
+        url: https://github.com/endlessm/threadbare/releases/download/v0.1.4/threadbare-v0.1.4-linux-metadata.tar.gz
+        sha256: 968cbdfc1f288128d82c465af660f2c48aeceaa1f77753b5be1b6fa526dbeb49
+        dest-filename: linux-metadata.tar.gz
         x-checker-data:
           type: json
           url: https://api.github.com/repos/endlessm/threadbare/releases/latest
-          tag-query: .tag_name
+          version-query: .tag_name
+          url-query: |
+            .assets[] | select(.name | endswith("-linux-metadata.tar.gz")) | .browser_download_url
 
       - type: file
         url: https://github.com/endlessm/threadbare/releases/download/v0.1.4/threadbare-v0.1.4.pck
