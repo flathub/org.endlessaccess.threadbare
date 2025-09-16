@@ -3,10 +3,6 @@
 - For the game source code, issue tracking, etc., see
   [@endlessm/threadbare](https://github.com/endlessm/threadbare)
 
-Building this Flatpak requires Git LFS. If you use `org.flatpak.Builder` from
-Flathub, it is patched to use Git LFS automatically. Otherwise you will need to
-install and configure it yourself.
-
 ## Permissions
 
 - `--device=all`: Currently necessary for controller support.
