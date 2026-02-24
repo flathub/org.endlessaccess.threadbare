@@ -1,8 +1,8 @@
 id: org.endlessaccess.threadbare
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: "25.08"
 base: org.godotengine.godot.BaseApp
-base-version: '4.5'
+base-version: "4.6"
 sdk: org.freedesktop.Sdk
 command: godot-runner
 finish-args:
@@ -11,14 +11,13 @@ finish-args:
   - --socket=fallback-x11
   - --socket=pulseaudio
   - --device=all
-  - --talk-name=org.freedesktop.ScreenSaver
 modules:
   - name: threadbare
     buildsystem: simple
     sources:
       - type: archive
-        url: https://github.com/endlessm/threadbare/releases/download/v0.1.8/threadbare-v0.1.8-linux-metadata.tar.gz
-        sha256: 86037fc2284e0cf0c9d920d6249af40bbc81970b001bf84e75727939e6e4f5e2
+        url: https://github.com/endlessm/threadbare/releases/download/v0.1.9/threadbare-v0.1.9-linux-metadata.tar.gz
+        sha256: fba5da7fd54caa8b12cc4c2205c031f7df3bc6d6c1ab61d9dffd77e8fa81304b
         dest-filename: linux-metadata.tar.gz
         x-checker-data:
           type: json
@@ -28,8 +27,8 @@ modules:
             .assets[] | select(.name | endswith("-linux-metadata.tar.gz")) | .browser_download_url
 
       - type: file
-        url: https://github.com/endlessm/threadbare/releases/download/v0.1.8/threadbare-v0.1.8.pck
-        sha256: b0ac1bf355549ff05ee561db038611553c6bf5a6e794622e3d5e1d27c04dd2d5
+        url: https://github.com/endlessm/threadbare/releases/download/v0.1.9/threadbare-v0.1.9.pck
+        sha256: 2efd6d860c1dcf32c2b161c35922474ac0d0707a480a86f1999714b33e6bcfed
         dest-filename: godot-runner.pck
         x-checker-data:
           type: json
