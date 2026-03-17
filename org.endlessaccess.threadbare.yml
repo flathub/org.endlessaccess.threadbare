@@ -1,8 +1,8 @@
 id: org.endlessaccess.threadbare
 runtime: org.freedesktop.Platform
-runtime-version: "25.08"
+runtime-version: '25.08'
 base: org.godotengine.godot.BaseApp
-base-version: "4.6"
+base-version: '4.6'
 sdk: org.freedesktop.Sdk
 command: godot-runner
 finish-args:
@@ -16,8 +16,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://github.com/endlessm/threadbare/releases/download/v0.1.9/threadbare-v0.1.9-linux-metadata.tar.gz
-        sha256: fba5da7fd54caa8b12cc4c2205c031f7df3bc6d6c1ab61d9dffd77e8fa81304b
+        url: https://github.com/endlessm/threadbare/releases/download/v0.1.11/threadbare-v0.1.11-linux-metadata.tar.gz
+        sha256: db7c75a978e788389e9b700681846727244e123b5eaf2e359b255edbb5531c61
         dest-filename: linux-metadata.tar.gz
         x-checker-data:
           type: json
@@ -27,8 +27,8 @@ modules:
             .assets[] | select(.name | endswith("-linux-metadata.tar.gz")) | .browser_download_url
 
       - type: file
-        url: https://github.com/endlessm/threadbare/releases/download/v0.1.9/threadbare-v0.1.9.pck
-        sha256: 2efd6d860c1dcf32c2b161c35922474ac0d0707a480a86f1999714b33e6bcfed
+        url: https://github.com/endlessm/threadbare/releases/download/v0.1.11/threadbare-v0.1.11.pck
+        sha256: 6cca9c7aa2971fa5ac8d82b5e5fa0741193661b6879cc6d7614dded081b0668f
         dest-filename: godot-runner.pck
         x-checker-data:
           type: json
