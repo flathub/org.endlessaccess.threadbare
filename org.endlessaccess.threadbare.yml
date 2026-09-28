@@ -16,8 +16,8 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://github.com/endlessm/threadbare/releases/download/v0.2.2/threadbare-v0.2.2-linux-metadata.tar.gz
-        sha256: 985a3b93d11e9dca7727825c445a1db6cec2eac78713272a1c400e9f65c13ca6
+        url: https://github.com/endlessm/threadbare/releases/download/v0.2.3/threadbare-v0.2.3-linux-metadata.tar.gz
+        sha256: b206e88285762f148633d1434e841fa33e73890e8ab875a09d1ed066f7d5f243
         dest-filename: linux-metadata.tar.gz
         x-checker-data:
           type: json
@@ -27,8 +27,8 @@ modules:
             .assets[] | select(.name | endswith("-linux-metadata.tar.gz")) | .browser_download_url
 
       - type: file
-        url: https://github.com/endlessm/threadbare/releases/download/v0.2.2/threadbare-v0.2.2.pck
-        sha256: ace5642073c61587554cede6276dab20c1c4e2957948deaf438c0105efded1db
+        url: https://github.com/endlessm/threadbare/releases/download/v0.2.3/threadbare-v0.2.3.pck
+        sha256: 7a3b6c684cb16348e247852fcf8b0b52391e516cd8af158fd8c6d62d36c75140
         dest-filename: godot-runner.pck
         x-checker-data:
           type: json
