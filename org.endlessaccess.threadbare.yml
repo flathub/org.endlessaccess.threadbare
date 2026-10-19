@@ -1,6 +1,6 @@
 id: org.endlessaccess.threadbare
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 base: org.godotengine.godot.BaseApp
 base-version: '4.7'
 sdk: org.freedesktop.Sdk
